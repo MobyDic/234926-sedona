@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+
+      <header class="page-header">
+        <nav class="main-nav">
+          <button type="button" class="nav-hamburger"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a href="">ФОТО И ВИДЕО</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>ФОРМА ОТЗЫВА</a></li>
+            <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <img src="" width="104px" height="80px" alt="Седона">
+        </div>
+      </header>
+
+
+      <main class="page-content">
+        <form action="" method="post">
+          
+          <fieldset class="visitor">
+            <legend class="visitor__title">Представьтесь, пожалуйства</legend>
+            <label class="visitor__item">
+              <span class="visitor__text">Имя</span>
+              <input type="text" name="first-name" class="visitor__first-name" required>
+            </label>
+            <label class="visitor__item">
+              <span class="visitor__text">Отчество</span>
+              <input type="text" name="middle-name" class="visitor__middle-name">
+            </label>
+            <label class="visitor__item">
+              <span class="visitor__text">Фамилия</span>
+              <input type="text" name="last-name" class="visitor__last-name" required>
+            </label>
+          </fieldset>
+
+          <fieldset class="contact">
+            <legend class="contact__title">Контактная информация:</legend>
+            <label class="contact__item">
+              <span class="contact__title">Телефон</span>
+              <input type="tel" name="tel" class="contact__tel" pattern="[0-9]{3}-[0-9]{6}">
+            </label>
+            <label class="contact__item">
+              <span class="contact__title">Электронная почта</span>
+              <input type="email" name="mail" class="contact__mail">  
+          </fieldset>
+
+          <fieldset class="impression">
+            <legend class="impression__title">Ваши общие впечатления</legend>
+
+            <label class="impression__item radio-box">
+              <input type="radio" name="answer" class="radio-box__control" checked>
+              <span class="radio-box__text">Скорее положительное</span>
+            </label>
+
+            <label class="impression__item radio-box">
+              <input type="radio" name="answer" class="radio-box__control" >
+              <span class="radio-box__text">Скорее отрицательное</span>
+            </label>
+
+            <label class="impression__item radio-box">
+              <input type="radio" name="answer" class="radio-box__control" >
+              <span class="radio-box__text">Затрудняюсь ответить</span>
+            </label>
+
+          </fieldset>
+
+          <fieldset class="visit-places">
+            <legend class="visit-places__title">Посещенные достопримечательности</legend>
+
+            <label class="visit__place check-box">
+              <input type="checkbox" name="place-one" class="check-box__control" checked>
+              <span class="check-box__text">Мост Дьявола</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="place-two" class="check-box__control" checked>
+              <span class="check-box__text">Слайд-парк</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="place-three" class="check-box__control">
+              <span class="check-box__text">Гора-Колокол</span>
+            </label>  
+
+            <label>
+              <input type="checkbox" name="place-four" class="check-box__control" checked>
+              <span class="check-box__text">Красные скалы</span>
+            </label> 
+
+          </fieldset>
+
+          <fieldset class="emotion">
+            <legend class="emotion__title">Опишите свои эмоции</legend>
+            <textarea class="emotion__text" name="note" row="9" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+
+          <button type="sumbit" class="btn btn--send">Отправить отзыв</button>
+
+        </form>
+      </main>
+
+
+      <footer class="page-footer">
+
+        <div class="footer-content">
+
+          <div class="hashtag">#VISITSEDONA</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social-link  social-link--twitter"  href="" ></a></li>
+              <li class="social__item"><a class="social-link  social-link--facebook"  href="" ></a></li>
+              <li class="social__item"><a class="social-link  social-link--youtube"  href=""></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content__copyright">
+            <span class="footer-content__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="footer-content__copyright-link">
+            <img src="img/html_academy.png" alt="Лого HTML Academy" width="25px" height="35px"></a> 
+          </div>
+
+        </div>
+
+      </footer>
+
+
+    </div>
+  </body>
+</html>
