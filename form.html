@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -13,96 +14,98 @@
         <nav class="main-nav">
           <button type="button" class="nav-hamburger"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="">ГЛАВНАЯ</a></li>
-            <li class="main-nav__item"><a href="">ФОТО И ВИДЕО</a></li>
+            <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
             <li class="main-nav__item main-nav__item--active"><a>ФОРМА ОТЗЫВА</a></li>
             <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
           </ul>
         </nav>
-        <div class="page-header__logo">
-          <img src="" width="104px" height="80px" alt="Седона">
+          <div class="page-header__logo">
+          <img src="" width="104px" height="80px" alt="Седона лого">
         </div>
       </header>
 
 
       <main class="page-content">
-        <form action="" method="post">
-          
-          <fieldset class="visitor">
-            <legend class="visitor__title">Представьтесь, пожалуйства</legend>
-            <label class="visitor__item">
-              <span class="visitor__text">Имя</span>
-              <input type="text" name="first-name" class="visitor__first-name" required>
-            </label>
-            <label class="visitor__item">
-              <span class="visitor__text">Отчество</span>
-              <input type="text" name="middle-name" class="visitor__middle-name">
-            </label>
-            <label class="visitor__item">
-              <span class="visitor__text">Фамилия</span>
-              <input type="text" name="last-name" class="visitor__last-name" required>
-            </label>
+
+        <div class="page-content__header">
+          <div class="page-content__background">
+            <img src="img/sedona.jpg" alt="Седона" width="320" height="262">
+          </div>
+          <div class="page-content__description">  
+            <h2 class="form-intro__title">Оставьте свой отзыв</h2>
+            <p class="form-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>  
+
+        <form class="form" action="" method="post">  
+          <fieldset class="form__fieldset form__feldset--user-name">
+            <legend class="form__legend">Представьтесь, пожалуйства</legend>
+            <div class="form__field">
+              <label class="form__label" for="first-name">Имя</label>
+              <input class="form__input" type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="middle-name">Отчество</label>
+              <input class="form__input" type="text" id="middle-name" name="middle-name" >
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="last-name">Фамилия</label>
+              <input class="form__input" type="text" id="last-name" name="last-name" required>
+            </div>
           </fieldset>
 
-          <fieldset class="contact">
-            <legend class="contact__title">Контактная информация:</legend>
-            <label class="contact__item">
-              <span class="contact__title">Телефон</span>
-              <input type="tel" name="tel" class="contact__tel" pattern="[0-9]{3}-[0-9]{6}">
-            </label>
-            <label class="contact__item">
-              <span class="contact__title">Электронная почта</span>
-              <input type="email" name="mail" class="contact__mail">  
+          <fieldset class="form__fieldset form__fieldset--user-contact">
+            <legend class="form__legend">Контактная информация:</legend>
+            <div class="form__field">
+              <label class="form__label" for="user-phone">Телефон</label>
+              <input class="form__input" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}">
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="user-mail">Электронная почта</label>
+              <input class="form__input" type="email" id="user-mail" name="user-mail">
+            </div>
           </fieldset>
 
-          <fieldset class="impression">
-            <legend class="impression__title">Ваши общие впечатления</legend>
-
-            <label class="impression__item radio-box">
-              <input type="radio" name="answer" class="radio-box__control" checked>
-              <span class="radio-box__text">Скорее положительное</span>
-            </label>
-
-            <label class="impression__item radio-box">
-              <input type="radio" name="answer" class="radio-box__control" >
-              <span class="radio-box__text">Скорее отрицательное</span>
-            </label>
-
-            <label class="impression__item radio-box">
-              <input type="radio" name="answer" class="radio-box__control" >
-              <span class="radio-box__text">Затрудняюсь ответить</span>
-            </label>
-
+          <fieldset class="form__fieldset form__fieldset--reply">
+            <legend class="form__legend">Ваши общие впечатления</legend>
+            <div class="form__field">
+              <input class="form__input form__input--radio" type="radio" name="user-reply" value="positive" checked>
+              <label class="form__label" for="user-reply">Скорее положительное</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input--radio" type="radio" name="user-reply" value="negative" >
+              <label class="form__label" for="user-reply">Скорее отрицательное</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input--radio" type="radio" name="user-reply" value="unsure" >
+              <label class="form__label" for="user-reply">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
 
-          <fieldset class="visit-places">
-            <legend class="visit-places__title">Посещенные достопримечательности</legend>
-
-            <label class="visit__place check-box">
-              <input type="checkbox" name="place-one" class="check-box__control" checked>
-              <span class="check-box__text">Мост Дьявола</span>
-            </label>
-
-            <label>
-              <input type="checkbox" name="place-two" class="check-box__control" checked>
-              <span class="check-box__text">Слайд-парк</span>
-            </label>
-
-            <label>
-              <input type="checkbox" name="place-three" class="check-box__control">
-              <span class="check-box__text">Гора-Колокол</span>
-            </label>  
-
-            <label>
-              <input type="checkbox" name="place-four" class="check-box__control" checked>
-              <span class="check-box__text">Красные скалы</span>
-            </label> 
-
+          <fieldset class="form__fieldset form__fieldset--visit-places">
+            <legend class="form__legend">Посещенные достопримечательности</legend>
+            <div class="form__field">
+              <input class="form__input form__input--checkbox" type="checkbox" name="devil-bridge" checked>
+              <label class="form__label" for="devil-bridge">Мост Дьявола</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input--checkbox" type="checkbox" name="park" checked>
+              <label class="form__label" for="slide-park">Слад-парк</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input--checkbox" type="checkbox" name="mountain-bell" >
+              <label class="form__label" for="mountain-bell">Гора-колокол</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input--checkbox" type="checkbox" name="red-rocks" checked>
+              <label class="form__label" for="red-rocks">Красные скалы</label>
+            </div>
           </fieldset>
 
-          <fieldset class="emotion">
-            <legend class="emotion__title">Опишите свои эмоции</legend>
-            <textarea class="emotion__text" name="note" row="9" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__fieldset">
+            <legend class="form__lengend">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <button type="sumbit" class="btn btn--send">Отправить отзыв</button>
