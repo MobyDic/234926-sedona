@@ -1,4 +1,22 @@
 .main-nav {
-	background-color: @color-blue;	
-	.font-regular(@color-white, 18px, 40px);
+	background-color: @color-blue; 	
+}
+
+.main-nav__list {
+	margin: 0;
+    padding: 12px 0;
+	list-style: none;
+}
+
+.main-nav__item {
+	margin-bottom: 12px;
+    a {
+    	.font-bold (@color-white, 18px, 40px);
+    	text-decoration: none;
+    }
+}
+
+.main-nav__item--active {
+	.font-bold (@color-white, 18px, 40px);
+	text-decoration: none;
 }
