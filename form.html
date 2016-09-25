@@ -30,11 +30,11 @@
 
         <div class="page-content__header">
           <div class="page-content__background">
-            <img src="img/sedona.jpg" alt="Седона" width="320" height="262">
+            <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320" height="262">
           </div>
           <div class="page-content__description">  
-            <h2 class="form-intro__title">Оставьте свой отзыв</h2>
-            <p class="form-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <h2 class="page-content__title">Оставьте свой отзыв</h2>
+            <p class="page-content__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </div>  
 
@@ -42,15 +42,15 @@
           <fieldset class="form__fieldset form__feldset--user-name">
             <legend class="form__legend">Представьтесь, пожалуйства</legend>
             <div class="form__field">
-              <label class="form__label" for="first-name">Имя</label>
+              <label class="form__label" for="first-name">Имя:</label>
               <input class="form__input" type="text" id="first-name" name="first-name" required>
             </div>
             <div class="form__field">
-              <label class="form__label" for="middle-name">Отчество</label>
+              <label class="form__label" for="middle-name">Отчество:</label>
               <input class="form__input" type="text" id="middle-name" name="middle-name" >
             </div>
             <div class="form__field">
-              <label class="form__label" for="last-name">Фамилия</label>
+              <label class="form__label" for="last-name">Фамилия:</label>
               <input class="form__input" type="text" id="last-name" name="last-name" required>
             </div>
           </fieldset>
@@ -58,53 +58,53 @@
           <fieldset class="form__fieldset form__fieldset--user-contact">
             <legend class="form__legend">Контактная информация:</legend>
             <div class="form__field">
-              <label class="form__label" for="user-phone">Телефон</label>
+              <label class="form__label" for="user-phone">Контактный телефон:</label>
               <input class="form__input" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}">
             </div>
             <div class="form__field">
-              <label class="form__label" for="user-mail">Электронная почта</label>
+              <label class="form__label" for="user-mail">Электронная почта:</label>
               <input class="form__input" type="email" id="user-mail" name="user-mail">
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--reply">
-            <legend class="form__legend">Ваши общие впечатления</legend>
+            <legend class="form__legend">Ваши общие впечатления:</legend>
             <div class="form__field">
               <input class="form__input form__input--radio" type="radio" name="user-reply" value="positive" checked>
-              <label class="form__label" for="user-reply">Скорее положительное</label>
+              <label class="form__label form__label--bold" for="user-reply">Скорее положительное</label>
             </div>
             <div class="form__field">
               <input class="form__input form__input--radio" type="radio" name="user-reply" value="negative" >
-              <label class="form__label" for="user-reply">Скорее отрицательное</label>
+              <label class="form__label form__label--bold" for="user-reply">Скорее отрицательное</label>
             </div>
             <div class="form__field">
               <input class="form__input form__input--radio" type="radio" name="user-reply" value="unsure" >
-              <label class="form__label" for="user-reply">Затрудняюсь ответить</label>
+              <label class="form__label form__label--bold" for="user-reply">Затрудняюсь ответить</label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--visit-places">
-            <legend class="form__legend">Посещенные достопримечательности</legend>
+            <legend class="form__legend">Посещенные достопримечательности:</legend>
             <div class="form__field">
               <input class="form__input form__input--checkbox" type="checkbox" name="devil-bridge" checked>
-              <label class="form__label" for="devil-bridge">Мост Дьявола</label>
+              <label class="form__label form__label--bold" for="devil-bridge">Мост Дьявола</label>
             </div>
             <div class="form__field">
               <input class="form__input form__input--checkbox" type="checkbox" name="park" checked>
-              <label class="form__label" for="slide-park">Слад-парк</label>
+              <label class="form__label form__label--bold" for="slide-park">Слад-парк</label>
             </div>
             <div class="form__field">
               <input class="form__input form__input--checkbox" type="checkbox" name="mountain-bell" >
-              <label class="form__label" for="mountain-bell">Гора-колокол</label>
+              <label class="form__label form__label--bold" for="mountain-bell">Гора-колокол</label>
             </div>
             <div class="form__field">
               <input class="form__input form__input--checkbox" type="checkbox" name="red-rocks" checked>
-              <label class="form__label" for="red-rocks">Красные скалы</label>
+              <label class="form__label form__label--bold" for="red-rocks">Красные скалы</label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__lengend">Опишите свои эмоции</legend>
+            <legend class="form__legend">Опишите свои эмоции:</legend>
             <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
