@@ -18,23 +18,25 @@
 }
 
 .advantages__title {
-	.font-bold (@color-black, 18px, 26px);
+	.font-bold (18px, 26px);
 	margin-bottom: 16px;
+
 }
 
-.advantages__counter,
+.advantages__counter {
+	.font-regular (14px, 21px);
+	margin-bottom: 16px;
+
+  &-grey {
+  color: @color-grey;
+  }
+}
+
 .advantages__slogan {
-	.font-regular (@color-black, 14px, 21px);
-	margin-bottom: 16px;
-}
+  .font-regular (14px, 21px);
+  margin-bottom: 16px;
 
-.advantages__title--white,
-.advantages__counter--white,
-.advantages__slogan--white {
-	color: @color-white;
-}
-
-.advantages__counter--grey,
-.advantages__slogan--grey {
-	color: @color-grey;
+  &-grey {
+  color: @color-grey;
+  }
 }
