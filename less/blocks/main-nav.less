@@ -1,0 +1,33 @@
+.main-nav {
+	background-color: @color-blue;
+}
+
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav__item {
+
+  .font-bold (18px, 40px);
+
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+
+	.main-nav__link   {
+		text-decoration: none;
+    color: @color-white;
+    display: block;
+    padding: 12px 100px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255,255,255, 0.3);
+    }
+	}
+}
