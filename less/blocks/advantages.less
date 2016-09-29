@@ -1,11 +1,25 @@
 .advantages {
 	outline: 2px solid blue;
+
+
+
+}
+.advantages__wrapper {
+  outline: 2px dashed red;
+
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__item {
+  outline: 3px dashed green;
 	padding-top: 40px;
 	padding-bottom: 40px;
-
+  text-align: center;
 	&--blue {
 		background-color: @color-blue;
 		text-align: center;
@@ -38,5 +52,32 @@
 
   &-grey {
   color: @color-grey;
+  }
+}
+
+@media @tablet-widths {
+
+  .advantages__list {
+    width: auto;
+    margin: 0;
+    background-color: @color-white;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .advantages__wrapper {
+    .clearfix();
+  }
+  .advantages__img {
+    float: right;
+  }
+  .advantages__item {
+    float: left;
+    -webkit-flex-grow: 1;
   }
 }

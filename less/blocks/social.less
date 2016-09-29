@@ -1,0 +1,38 @@
+.social {
+  width: 152px;
+  margin: 33px auto 40px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.social__item {
+
+  width: 47px;
+  height: 49px;
+  background-color: @color-blue;
+
+  &:hover,
+  &:focus {
+    color: @color-white;
+    background-color: #669ec0;
+  }
+  &:active {
+    color: rgba(255,255,255, 0.3);
+    background-color: #5496bd;
+  }
+
+  .social__link   {
+    text-decoration: none;
+    color: @color-white;
+  }
+}
+

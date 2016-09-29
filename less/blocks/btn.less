@@ -8,6 +8,7 @@
   text-align: center;
   text-decoration: none;
   background-color: #81b3d2;
+  margin: 0 auto;
 
 
   &:hover,
@@ -21,10 +22,16 @@
   }
 
   &--find-hotel {
-    width: 460px;
+    width: 280px;
   }
 
   &--send {
     width: 280px;
+  }
+
+  @media @tablet-widths {
+    &--find-hotel {
+    width: 460px;
+    }
   }
 }
