@@ -1,5 +1,5 @@
 .photos-item {
-  outline: 2px solid grey;
+  // outline: 2px solid grey;
 }
 
 .photos-item__title {
@@ -10,4 +10,15 @@
   .font-regular (14px, 24px);
   color: @color-grey;
   text-transform: none;
+}
+
+@media @tablet-widths {
+  .photos-item:first-child {
+    width: 100%;
+    min-height: 450px;
+  }
+  .photos-item {
+    width: 324px;
+    min-height: 350px;
+  }
 }

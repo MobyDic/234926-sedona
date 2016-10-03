@@ -26,20 +26,7 @@
 
 
       <main class="page-content">
-        <script>
-            var navMain = document.querySelector('.main-nav');
-            var navToggle = document.querySelector('.main-nav__hamburger');
-            navMain.classList.remove('main-nav--nojs');
-            navToggle.addEventListener('click', function() {
-              if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-              } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-              }
-            });
-        </script>
+
         <div class="intro">
           <div class="intro-background">
             <img src="img/bg-back-mobile%401x.jpg" alt="Седона приветствие" width="320" height="390">
@@ -53,12 +40,12 @@
         <div class="advantages">
           <div class="advantages__wrapper">
             <div class="advantages__item advantages__item--blue">
-              <h2 class="advantages__title advantages__title--white">Настоящий городок</h2>
-              <span class="advantages__counter advantages__counter--white">- №1 -</span>
-              <p class="advantages__slogan advantages__slogan--white">Седона - не атракцион для туристов там течет своя жизнь</p>
+              <h2 class="advantages__title">Настоящий городок</h2>
+              <span class="advantages__counter">- №1 -</span>
+              <p class="advantages__slogan">Седона - не атракцион для туристов там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/sedona_sity.jpg" alt="Фото Седоны" width="320" height="262">
+              <img src="img/photo-city%401x.jpg" alt="Фото Седоны" width="320" height="260">
             </div>
           </div>
 
@@ -81,12 +68,12 @@
 
           <div class="advantages__wrapper">
             <div class="advantages__item advantages__item--blue">
-              <h2 class="advantages__title  advantages__title--white">Там есть мост дьявола</h2>
-              <span class="advantages__counter advantages__counter--white">- №2 -</span>
-              <p class="advantages__slogan advantages__slogan--white">Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
+              <h2 class="advantages__title">Там есть мост дьявола</h2>
+              <span class="advantages__counter">- №2 -</span>
+              <p class="advantages__slogan">Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/sedona_bridge.jpg" alt="Фото моста Седоны" width="320" height="262">
+              <img src="img/photo-bridge%401x.jpg" alt="Фото моста Седоны" width="320" height="260">
             </div>
           </div>
 
@@ -151,5 +138,6 @@
       </footer>
 
     </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

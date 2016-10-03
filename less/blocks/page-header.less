@@ -1,6 +1,6 @@
 .page-header {
 	outline: 2px solid red;
-  .container();
+  // .container();
   position: relative;
 }
 
@@ -16,17 +16,23 @@
     height: auto;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+    z-index: 10;
   }
 }
 
 @media @tablet-widths {
+  .page-header {
+    background-color: @color-white;
+  }
 
   .page-header__logo {
-    min-height: 0;
     position: absolute;
     top: 0;
-    left:50%;
+    left: 50%;
+    z-index: 10;
+    min-height: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-  }
+   }
+
 }
