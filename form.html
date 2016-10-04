@@ -30,7 +30,7 @@
 
         <div class="page-content__header">
           <div class="page-content__background">
-            <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320px" height="390px">
+            <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320px" height="160px">
           </div>
           <div class="page-content__description">
             <h2 class="page-content__title">Оставьте свой отзыв</h2>
@@ -39,7 +39,7 @@
         </div>
 
         <form class="form" action="" method="post">
-          <fieldset class="form__fieldset form__feldset--user-name">
+          <fieldset class="form__fieldset form__fieldset--user-name">
             <legend class="form__legend">Представьтесь, пожалуйства</legend>
             <div class="form__field">
               <label class="form__label" for="first-name">Имя:</label>
@@ -69,41 +69,48 @@
 
           <fieldset class="form__fieldset form__fieldset--reply">
             <legend class="form__legend">Ваши общие впечатления:</legend>
-            <div class="form__field">
-              <input class="form__input form__input--radio" type="radio" name="user-reply" value="positive" checked>
-              <label class="form__label form__label--bold" for="user-reply">Скорее положительное</label>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply1"value="positive" checked>
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply1">Скорее положительное</label>
             </div>
-            <div class="form__field">
-              <input class="form__input form__input--radio" type="radio" name="user-reply" value="negative" >
-              <label class="form__label form__label--bold" for="user-reply">Скорее отрицательное</label>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply2">Скорее отрицательное</label>
             </div>
-            <div class="form__field">
-              <input class="form__input form__input--radio" type="radio" name="user-reply" value="unsure" >
-              <label class="form__label form__label--bold" for="user-reply">Затрудняюсь ответить</label>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply3"value="unsure" >
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply3">Затрудняюсь ответить</label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--visit-places">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <div class="form__field">
-              <input class="form__input form__input--checkbox" type="checkbox" name="devil-bridge" checked>
-              <label class="form__label form__label--bold" for="devil-bridge">Мост Дьявола</label>
+            <div class="form__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <i class="checkbox__icon"></i>
+              <label class="checkbox__label" for="devil-bridge">Мост Дьявола</label>
             </div>
-            <div class="form__field">
-              <input class="form__input form__input--checkbox" type="checkbox" name="park" checked>
-              <label class="form__label form__label--bold" for="slide-park">Слад-парк</label>
+            <div class="form__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+              <i class="checkbox__icon"></i>
+              <label class="checkbox__label" for="park">Слад-парк</label>
             </div>
-            <div class="form__field">
-              <input class="form__input form__input--checkbox" type="checkbox" name="mountain-bell" >
-              <label class="form__label form__label--bold" for="mountain-bell">Гора-колокол</label>
+            <div class="form__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
+              <i class="checkbox__icon"></i>
+              <label class="checkbox__label" for="mountain-bell">Гора-колокол</label>
             </div>
-            <div class="form__field">
-              <input class="form__input form__input--checkbox" type="checkbox" name="red-rocks" checked>
-              <label class="form__label form__label--bold" for="red-rocks">Красные скалы</label>
+            <div class="form__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+               <i class="checkbox__icon"></i>
+              <label class="checkbox__label" for="red-rocks">Красные скалы</label>
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--emotion">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
@@ -131,7 +138,7 @@
           <div class="footer-content__copyright">
             <span class="footer-content__design-by">РАЗРАБОТАНО</span>
             <a href="https://htmlacademy.ru" class="footer-content__copyright-link">
-            <img src="img/html_academy.png" alt="Лого HTML Academy" width="25px" height="35px"></a>
+            <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px"></a>
           </div>
 
         </div>
