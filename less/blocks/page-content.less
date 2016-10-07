@@ -2,12 +2,17 @@
 	outline: 2px solid grey;
 }
 
+.page-content__background {
+  height: 390px;
+  background: @color-blue url("../img/bg-back-mobile%401x.jpg") -220px 0 no-repeat;
+  &--litle {
+    height: 160px;
+    background-position: -220px -220px;
+  }
+}
+
 .page-content__intro {
 	margin:  40px 20px 35px;
-  text-align: center;
-}
-.page-content__description {
-  margin: 40px 20px 20px;
   text-align: center;
 }
 
@@ -21,22 +26,10 @@
   color: @color-grey;
 }
 
-.page-content__background {
-  min-height: 160px;
-  background-color: @color-blue;
-  overflow: hidden;
-    img {
-      width: 100%;
-      height: 160px;
-    }
-}
 
 @media @tablet-widths {
   .page-content__background {
-    min-height: 290x;
-      img {
-        height: 290px;
-        width: 100%;
-      }
+    height: 520px;
+    background-image: url("");
   }
 }

@@ -4,23 +4,29 @@
   outline: 2px dashed blue;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-}
+//   -webkit-justify-content: space-between;
+ }
+
 .form__fieldset {
-  padding: 0;
+  width: 100%;
   border: none;
   outline: 1px solid black;
-    &--visit-places {
-        width: 100%;
-    }
-    &--emotion {
-        width: 100%;
-    }
-    &--user-contact {
-        width: 100%;
-    }
+    // &--visit-places {
+    //     width: 100%;
+    // }
+    // &--emotion {
+    //     width: 100%;
+    // }
+    // &--user-contact {
+    //     width: 100%;
+    // }
 }
 
+
+ .form__field {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
 
 .form__legend {
   margin: 0;
@@ -58,11 +64,11 @@
 	margin-bottom: 20px;
   padding: 16px 0;
   border: none;
-  width: 180px;
+  width: 100px;
   .font-bold (18px, 26px);
   text-transform: none;
   background-color: #f2f2f2;
-
+  -webkit-flex-grow: 1;
   &:hover {
     background-color: #e5e5e5;
   }
@@ -72,18 +78,41 @@
   }
 
 }
+
+ .form__input--long {
+   width: 100%;
+  }
+
 @media @tablet-widths {
   .form__fieldset {
-      &--user-name {
-        -webkit-flex-grow: 1;
-      }
-      &--reply {
-        -webkit-order: -1;
-         -webkit-flex-grow: 1;
-      }
-      &--visit-places {
-        width: 100%;
-      }
 
-  }
+       &--user-name {
+        -webkit-flex-grow: 1;
+        width: 200px;
+       }
+       &--reply {
+        -webkit-flex-grow: 1;
+        -webkit-order: -1;
+        width: 200px;
+       }
+       &--visit-places {
+        outline: 2px dashed blue;
+
+         .form__wrap {
+            display: -webkit-flex;
+            -webkit-flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -webkit-justify-content: center;
+            outline: 2px solid green;
+
+         }
+         .form__legend {
+            outline: 2px dashed yellow;
+         }
+         .form__checkbox {
+            width: 240px;
+         }
+      }
+   }
+
 }

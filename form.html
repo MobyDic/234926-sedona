@@ -29,10 +29,10 @@
       <main class="page-content">
 
         <div class="page-content__header">
-          <div class="page-content__background">
-            <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320px" height="160px">
+          <div class="page-content__background page-content__background--litle">
+            <!-- <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320px" height="160px"> -->
           </div>
-          <div class="page-content__description">
+          <div class="page-content__intro">
             <h2 class="page-content__title">Оставьте свой отзыв</h2>
             <p class="page-content__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
@@ -59,11 +59,11 @@
             <legend class="form__legend">Контактная информация:</legend>
             <div class="form__field">
               <label class="form__label" for="user-phone">Контактный телефон:</label>
-              <input class="form__input" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}">
+              <input class="form__input form__input--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}">
             </div>
             <div class="form__field">
               <label class="form__label" for="user-mail">Электронная почта:</label>
-              <input class="form__input" type="email" id="user-mail" name="user-mail">
+              <input class="form__input form__input--long" type="email" id="user-mail" name="user-mail">
             </div>
           </fieldset>
 
@@ -88,25 +88,27 @@
 
           <fieldset class="form__fieldset form__fieldset--visit-places">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <div class="form__field checkbox">
-              <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-              <i class="checkbox__icon"></i>
-              <label class="checkbox__label" for="devil-bridge">Мост Дьявола</label>
-            </div>
-            <div class="form__field checkbox">
-              <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
-              <i class="checkbox__icon"></i>
-              <label class="checkbox__label" for="park">Слад-парк</label>
-            </div>
-            <div class="form__field checkbox">
-              <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
-              <i class="checkbox__icon"></i>
-              <label class="checkbox__label" for="mountain-bell">Гора-колокол</label>
-            </div>
-            <div class="form__field checkbox">
-              <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
-               <i class="checkbox__icon"></i>
-              <label class="checkbox__label" for="red-rocks">Красные скалы</label>
+            <div class="form__wrap">
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="devil-bridge">Мост Дьявола</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="park">Слад-парк</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="mountain-bell">Гора-колокол</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+                 <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="red-rocks">Красные скалы</label>
+              </div>
             </div>
           </fieldset>
 
@@ -123,7 +125,7 @@
 
       <footer class="page-footer">
 
-        <div class="footer-content">
+        <div class="page-footer__content">
 
           <div class="hashtag">#VISITSEDONA</div>
 
@@ -135,10 +137,11 @@
             </ul>
           </div>
 
-          <div class="footer-content__copyright">
-            <span class="footer-content__design-by">РАЗРАБОТАНО</span>
-            <a href="https://htmlacademy.ru" class="footer-content__copyright-link">
-            <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px"></a>
+          <div class="page-footer__copyright">
+            <span class="page-footer__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+              <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px">
+            </a>
           </div>
 
         </div>

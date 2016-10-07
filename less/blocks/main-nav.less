@@ -78,7 +78,9 @@
 }
 
 @media @tablet-widths {
-
+  .main-nav {
+    background-color: @color-white;
+  }
   .main-nav__list {
     display: -webkit-flex;
     -webkit-justify-content: space-between;
@@ -90,7 +92,6 @@
     margin: 0;
     width: auto;
     min-height: 56px;
-    background-color: @color-white;
     align-items: center;
   }
   .main-nav__item {
@@ -102,7 +103,6 @@
         color: @color-black;
 
         &:hover {
-          background-color: @color-white;
           color: @color-blue;
         }
         &:active {
