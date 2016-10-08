@@ -1,6 +1,7 @@
 .btn {
 
   display: block;
+  margin: 0 auto;
   padding: 16px;
   cursor: pointer;
   .font-bold(21px,26px);
@@ -21,10 +22,16 @@
   }
 
   &--find-hotel {
-    width: 460px;
+    width: 280px;
   }
 
   &--send {
     width: 280px;
+  }
+
+  @media @tablet-widths {
+    &--find-hotel {
+    width: 460px;
+    }
   }
 }

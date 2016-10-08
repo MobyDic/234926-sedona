@@ -1,31 +1,74 @@
+.form {
+  margin: 0;
+  padding: 20px;
+  outline: 2px dashed blue;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+//   -webkit-justify-content: space-between;
+ }
+
 .form__fieldset {
-	border: none;
+  width: 100%;
+  border: none;
+  outline: 1px solid black;
+    // &--visit-places {
+    //     width: 100%;
+    // }
+    // &--emotion {
+    //     width: 100%;
+    // }
+    // &--user-contact {
+    //     width: 100%;
+    // }
+}
+
+
+ .form__field {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
 }
 
 .form__legend {
+  margin: 0;
+  padding: 24px 0;
 	.font-bold (18px, 26px);
-	margin-bottom: 27px;
+  text-align: center;
 }
 
 .form__label {
 	.font-regular (14px, 26px);
   color: @color-grey;
 	margin-right: 18px;
+
+  &--bold {
+	 .font-bold (18px, 26px);
+	 text-transform: none;
+  }
 }
 
-.form__label--bold {
-	.font-bold (18px, 26px);
-	text-transform: none;
+.form__textarea {
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 100%;
+  min-height: 160px;
+  background-color: #f2f2f2;
+  .font-bold (18px, 26px);
+  text-transform: none;
+  color: @color-black;
+  box-sizing: border-box;
+
 }
 
 .form__input {
-	padding: 16px;
-	.font-bold (18px, 26px);
-	text-transform: none;
-	margin-bottom: 20px;
-	background-color: #f2f2f2;
-  border: none;
 
+	margin-bottom: 20px;
+  padding: 16px 0;
+  border: none;
+  width: 100px;
+  .font-bold (18px, 26px);
+  text-transform: none;
+  background-color: #f2f2f2;
+  -webkit-flex-grow: 1;
   &:hover {
     background-color: #e5e5e5;
   }
@@ -33,4 +76,43 @@
     outline: 5px solid #e5e5e5;
     background-color: @color-white;
   }
+
+}
+
+ .form__input--long {
+   width: 100%;
+  }
+
+@media @tablet-widths {
+  .form__fieldset {
+
+       &--user-name {
+        -webkit-flex-grow: 1;
+        width: 200px;
+       }
+       &--reply {
+        -webkit-flex-grow: 1;
+        -webkit-order: -1;
+        width: 200px;
+       }
+       &--visit-places {
+        outline: 2px dashed blue;
+
+         .form__wrap {
+            display: -webkit-flex;
+            -webkit-flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -webkit-justify-content: center;
+            outline: 2px solid green;
+
+         }
+         .form__legend {
+            outline: 2px dashed yellow;
+         }
+         .form__checkbox {
+            width: 240px;
+         }
+      }
+   }
+
 }

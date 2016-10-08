@@ -2,16 +2,34 @@
 	outline: 2px solid grey;
 }
 
-.page-content__description {
-	margin-top:  40px;
-	margin-bottom: 35px;
+.page-content__background {
+  height: 390px;
+  background: @color-blue url("../img/bg-back-mobile%401x.jpg") -220px 0 no-repeat;
+  &--litle {
+    height: 160px;
+    background-position: -220px -220px;
+  }
 }
+
+.page-content__intro {
+	margin:  40px 20px 35px;
+  text-align: center;
+}
+
 .page-content__title {
 	.font-bold (18px, 26px);
 	margin-bottom: 35px;
 }
 
 .page-content__slogan {
-	.font-regular (14px, 26px);
+	.font-regular (14px, 24px);
   color: @color-grey;
+}
+
+
+@media @tablet-widths {
+  .page-content__background {
+    height: 520px;
+    background-image: url("");
+  }
 }
