@@ -1,23 +1,23 @@
 .page-footer {
-	outline: 2px solid grey;
+	// outline: 2px solid grey;
 }
 
 .page-footer__content {
-  outline: 2px dashed green;
+  // outline: 2px dashed green;
   padding-top: 40px;
   padding-bottom: 24px;
 }
 
 .page-footer__copyright {
   .font-regular (14px, 26px);
-  outline: 2px dashed green;
+  // outline: 2px dashed green;
   display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
 
 .page-footer__design-by {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 @media @tablet-widths {
@@ -33,6 +33,13 @@
     align-items: center;
     width: auto;
     min-height: 120px;
+    padding-top: 0;
     margin: 0 60px;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer__content {
+    margin: 0 50px;
   }
 }

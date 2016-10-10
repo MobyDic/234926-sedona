@@ -1,28 +1,28 @@
 .page-content {
-	outline: 2px solid grey;
+	// outline: 2px solid grey;
 }
 
 .page-content__background {
-  height: 390px;
-  background: @color-blue url("../img/bg-back-mobile%401x.jpg") -220px 0 no-repeat;
+  height: 385px;
+  background: @color-blue url("../img/bg-back-mobile%401x.jpg") -225px -5px no-repeat;
   &--litle {
     height: 160px;
-    background-position: -220px -220px;
+    background-position: -225px -220px;
   }
 }
 
 .page-content__intro {
-	margin:  40px 20px 35px;
+	margin:  30px 20px;
   text-align: center;
 }
 
 .page-content__title {
 	.font-bold (18px, 26px);
-	margin-bottom: 35px;
+  padding: 10px;
 }
 
 .page-content__slogan {
-	.font-regular (14px, 24px);
+	.font-regular (14px, 26px);
   color: @color-grey;
 }
 
@@ -31,5 +31,18 @@
   .page-content__background {
     height: 520px;
     background-image: url("");
+  }
+  .page-content__title {
+    padding: 20px 80px 5px;
+    .font-bold (21px, 26px);
+  }
+  .page-content__intro {
+    margin-bottom: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .page-content__title {
+    padding: 20px 300px 0;
   }
 }

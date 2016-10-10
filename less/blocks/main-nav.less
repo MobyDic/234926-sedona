@@ -1,8 +1,6 @@
 .main-nav {
 	background-color: @color-blue;
-  // .container ();
   position: relative;
-
 }
 
 .main-nav__hamburger {
@@ -89,7 +87,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0;
+    margin: 0 12px;
     width: auto;
     min-height: 56px;
     align-items: center;
@@ -103,6 +101,7 @@
         color: @color-black;
 
         &:hover {
+          background-color: @color-white;
           color: @color-blue;
         }
         &:active {
@@ -112,10 +111,19 @@
   }
 
   .main-nav__item:nth-child(2) {
-    margin-right: 200px;
+    margin-right: 155px;
   }
 
   .main-nav__hamburger {
     display: none;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav__list {
+    margin: 0 55px;
+  }
+  .main-nav__item:nth-child(2) {
+    margin-right: 250px;
   }
 }
