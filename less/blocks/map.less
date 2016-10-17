@@ -1,7 +1,13 @@
 .map {
+  position: relative;
 	background: url(../img/bg-map-mobile%401x.jpg) no-repeat;
   height: 350px;
   text-align: center;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 @media @tablet-widths {
@@ -10,4 +16,8 @@
   }
 }
 
-
+@media @desktop-widths {
+  .map {
+    background: @color-blue url(../img/bg-map-desktop%401x.jpg) no-repeat;
+  }
+}

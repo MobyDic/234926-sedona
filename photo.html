@@ -21,20 +21,29 @@
           </ul>
         </nav>
         <div class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" width="104px" height="80px" alt="Седона лого">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
+          </picture>
         </div>
       </header>
 
 
       <main class="page-content">
 
-        <div class="page-content__header">
+        <div class="page-content__header page-content__header--border">
           <div class="page-content__background page-content__background--litle">
-            <!-- <img src="img/bg-back-mobile%401x.jpg" alt="Седона" width="320" height="160"> -->
+            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg">
+            <picture class="page-content__picture">
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
           </div>
           <div class="page-content__intro">
             <h1 class="page-content__title">Фото и видео</h1>
-            <p class="page-content__slogan">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыться о политике и экономике</p>
+            <p class="page-content__slogan page-content__slogan--litle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыться о политике и экономике</p>
           </div>
         </div>
 
@@ -47,7 +56,17 @@
             <h2 class="photos-item__title">Неродные просторы</h2>
             <p class="photos-item__author">Автор фото: Борис</p>
             <div class="like-counter">
-              <button type="button" class="like-counter__hand"></button>
+              <button type="button" class="like-counter__hand">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Core" transform="translate(-295.000000, -464.000000)">
+                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+                        <path id="Shape" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
               <span class="like-counter__number">1350</span>
             </div>
           </div>
@@ -59,7 +78,17 @@
             <h2 class="photos-item__title">Местная растительность</h2>
             <p class="photos-item__author">Автор фото: Сергей</p>
             <div class="like-counter">
-              <button type="button" class="like-counter__hand"></button>
+              <button type="button" class="like-counter__hand">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Core" transform="translate(-295.000000, -464.000000)">
+                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+                        <path id="Shape" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
               <span class="like-counter__number">143</span>
             </div>
           </div>
@@ -83,7 +112,17 @@
             <h2 class="photos-item__title">Мост дьявола</h2>
             <p class="photos-item__author">Автор фото: Антон</p>
             <div class="like-counter">
-              <button type="button" class="like-counter__hand"></button>
+              <button type="button" class="like-counter__hand">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+                  <g id="Page-1">
+                    <g id="Core" transform="translate(-295.000000, -464.000000)">
+                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+                        <path id="Shape" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
               <span class="like-counter__number">254</span>
             </div>
           </div>

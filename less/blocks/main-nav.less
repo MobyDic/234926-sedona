@@ -55,6 +55,12 @@
 	}
 }
 
+.main-nav__item:last-child {
+  border-bottom: none;
+  -webkit-box-shadow: inset 0 -6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+
 
 @media @mobile-widths-only {
 
@@ -112,6 +118,10 @@
 
   .main-nav__item:nth-child(2) {
     margin-right: 155px;
+  }
+
+  .main-nav__item:last-child {
+    -webkit-box-shadow: none;
   }
 
   .main-nav__hamburger {
