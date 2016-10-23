@@ -1,0 +1,45 @@
+.icon {
+
+  &--social {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    fill: @color-white;
+  }
+
+  &--like {
+    position: absolute;
+    fill: #b2b2b2;
+    bottom: 0;
+    left: 0;
+  }
+  &--video-replay {
+    fill: #454545;
+  }
+  &--subtitles {
+    fill: #454545;
+  }
+  &--fullscreen {
+    fill: #454545;
+  }
+
+}
+
+@media @tablet-widths {
+  .icon {
+    &--video-replay {
+      fill: @color-white;
+    }
+    &--subtitles {
+      fill: @color-white;
+    }
+    &--fullscreen {
+      fill: @color-white;
+    }
+  }
+}

@@ -7,7 +7,7 @@
 
 .photos-item__title {
   .font-bold (14px, 24px);
-  padding-top: 13px;
+  padding-top: 15px;
   margin: 0;
 }
 
@@ -24,7 +24,21 @@
     min-height: 450px;
   }
   .photos-item {
+    position: relative;
     width: 324px;
     min-height: 350px;
+    border: none;
+    padding: 0;
+    background-color: @color-lightgrey;
   }
+
+  .photos-item__title {
+    padding-left: 20px;
+  }
+
+  .photos-item__author {
+    padding-left: 20px;
+    padding-bottom: 17px;
+  }
+
 }
