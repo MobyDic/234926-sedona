@@ -27,7 +27,20 @@
   &--fullscreen {
     fill: #454545;
   }
-
+  &--phone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background: #e5e5e5;
+  }
+  &--mail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 21px;
+    background: #e5e5e5;
+  }
 }
 
 @media @tablet-widths {
@@ -39,6 +52,14 @@
       fill: @color-white;
     }
     &--fullscreen {
+      fill: @color-white;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .icon {
+    &--like {
       fill: @color-white;
     }
   }

@@ -41,12 +41,20 @@
       }
     }
   }
+  @media @desktop-widths {
+    .page-content__img--litle {
+      top: -40px;
+    }
+  }
 }
 
 
 .page-content__intro {
 	margin:  30px 20px;
   text-align: center;
+  &--litle {
+    margin-bottom: 0;
+  }
 }
 
 .page-content__header {
@@ -121,8 +129,18 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 1338px auto;
     }
+    &--litle {
+      height: 300px;
+    }
   }
   .page-content__title {
     padding: 20px 300px 0;
+    &--litle {
+      padding-top: 82px;
+      padding-bottom: 10px;
+    }
+  }
+  .page-content__slogan--litle {
+    padding-bottom: 5px;
   }
 }

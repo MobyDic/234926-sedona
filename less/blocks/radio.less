@@ -1,14 +1,16 @@
 .radio {
-cursor: pointer;
-  display: flex;
+  cursor: pointer;
   display: -webkit-flex;
-  flex-item: flex-start;
-  -webkit-align-item: flex-start;
+  // -webkit-align-items: center;
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
+  &:last-child {
+      margin-bottom: 22px;
+    }
 
   @media @tablet-widths {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
+    // -webkit-align-items: flex-start;
     &:last-child {
       margin-bottom: 0;
     }
@@ -24,9 +26,9 @@ cursor: pointer;
 
   display: block;
 
-  width: 39px;
-  height: 39px;
-  margin-right: 24px;
+  width: 55px;
+  height: 55px;
+  margin-right: 22px;
 
   background-color: #f2f2f2;
   border-radius: 50%;
@@ -40,8 +42,8 @@ cursor: pointer;
     -webkit-transform: translate(-50%, -50%);
 
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 21px;
+    height: 21px;
 
     content: '';
     -webkit-transition: opacity .3s linear;
@@ -51,26 +53,18 @@ cursor: pointer;
     background: @color-grey;
   }
   @media @tablet-widths {
-    width: 53px;
-    height: 53px;
-    margin-right: 27px;
-    &::after {
-      width: 20px;
-      height: 20px;
+     margin-right: 20px;
     }
-  }
 }
 
 .radio__label {
   display: block;
-
-  padding-top: 10px;
   cursor: pointer;
 
   .font-bold-notrans(18px, 26px);
   @media @tablet-widths {
-    font-size: 19px;
-    padding-top: 17px;
+    // font-size: 19px;
+    // padding-top: 17px;
   }
 }
 

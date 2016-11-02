@@ -1,38 +1,50 @@
 .form {
   margin: 0;
-  padding: 20px;
-  outline: 2px dashed blue;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
-//   -webkit-justify-content: space-between;
  }
 
 .form__fieldset {
-  width: 100%;
+//    width: au;
   border: none;
-  outline: 1px solid black;
+  border-bottom: 1px solid @color-lightgrey;
+  padding: 0 20px 5px;
     // &--visit-places {
     //     width: 100%;
     // }
-    // &--emotion {
-    //     width: 100%;
-    // }
+    &--emotion {
+      margin-bottom: -10px;
+      padding-bottom: 0px;
+      border: none;
+    }
     // &--user-contact {
     //     width: 100%;
     // }
 }
+.form__checkbox {
+  display: -webkit-flex;
+  -webkit-align-item: center;
+}
 
-
- .form__field {
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
+.form__field {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-align-items: center;
+  // outline: 2px dashed green;
+  margin-bottom: 20px;
+  &--user-contact {
+    position: relative;
+  }
 }
 
 .form__legend {
   margin: 0;
-  padding: 24px 0;
+  padding: 20px 0;
 	.font-bold (18px, 26px);
   text-align: center;
+  &--litle {
+    display: none;
+  }
 }
 
 .form__label {
@@ -44,13 +56,28 @@
 	 .font-bold (18px, 26px);
 	 text-transform: none;
   }
+
+  &--user-contact {
+    padding-left: 20px;
+    padding-bottom: 7px;
+  }
+}
+.form__error {
+  padding-left: 20px;
+  padding-top: 5px;
+  color: red;
+  .font-regular-notrans (14px, 18px);
+}
+.form__text {
+  display: none;
 }
 
 .form__textarea {
   margin-bottom: 50px;
-  padding: 20px;
+  padding: 15px 20px;
   width: 100%;
   min-height: 160px;
+  border: none;
   background-color: #f2f2f2;
   .font-bold (18px, 26px);
   text-transform: none;
@@ -61,8 +88,7 @@
 
 .form__input {
 
-	margin-bottom: 20px;
-  padding: 16px 0;
+  padding: 16px 20px;
   border: none;
   width: 100px;
   .font-bold (18px, 26px);
@@ -84,35 +110,128 @@
   }
 
 @media @tablet-widths {
+  .form {
+    padding: 0 40px;
+  }
+  .form__field {
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   .form__fieldset {
 
        &--user-name {
         -webkit-flex-grow: 1;
         width: 200px;
+        padding-left: 60px;
+        border-left: 1px solid @color-lightgrey;
+        border-bottom: none;
+        padding-bottom: 0px;
        }
        &--reply {
         -webkit-flex-grow: 1;
         -webkit-order: -1;
-        width: 200px;
+        width: 220px;
+        padding-right: 35px;
+        border-bottom: none;
+        padding-bottom: 0px;
        }
        &--visit-places {
-        outline: 2px dashed blue;
+          position: relative;
+          width: 100%;
+          margin-top: 40px;
+          border:none;
+      }
+      &--emotion {
+        width: 100%;
+        margin-top: 26px;
+        border-bottom: none;
+      }
+      &--user-contact {
+        position: relative;
+        width: 100%;
+        margin-top: 55px;
+        border-bottom: none;
+      }
+
+
+  }
+  .form__textarea {
+    margin-top: 35px;
+  }
 
          .form__wrap {
             display: -webkit-flex;
             -webkit-flex-direction: row;
             -webkit-flex-wrap: wrap;
             -webkit-justify-content: center;
-            outline: 2px solid green;
-
          }
          .form__legend {
-            outline: 2px dashed yellow;
+            text-align: left;
+            .font-bold (21px, 26px);
+            padding-top: 0;
+            padding-bottom: 60px;
+            &--big {
+              display: none;
+            }
+            &--litle {
+              display: block;
+            }
+
+            &--border {
+              padding: 10px 0 25px;
+              margin: 0;
+              width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-align: center;
+              position: relative;
+
+              span {
+              position: relative;
+              display: inline-block;
+              vertical-align: middle;
+              white-space: normal;
+              width: 400px;
+              }
+            }
+            &--border>span {
+              position: relative;
+              display: inline-block;
+              vertical-align: middle;
+              white-space: normal;
+              width: 400px;
+              }
+            &--border:before,
+            &--border:after {
+              content: '';
+              display: inline-block;
+              width: 120px;
+              height: 1px;
+              background:  @color-lightgrey;
+              vertical-align: middle;
+              position: relative;
+            }
+
          }
+
          .form__checkbox {
-            width: 240px;
+            width: 230px;
+            padding-left: 30px;
          }
-      }
-   }
+
+         .form__error {
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+         .form__text {
+          display: block;
+          .font-regular (14px, 26px);
+          color: @color-grey;
+          margin-top: 35px;
+          margin-right: 20px;
+          float: right;
+         }
 
 }

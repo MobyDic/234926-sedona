@@ -1,14 +1,10 @@
 .checkbox {
   font-weight: bold;
-
   display: -webkit-flex;
   -webkit-align-items: center;
-
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   @media @tablet-widths {
-    margin-bottom: 24px;
-    width: 30%;
-    outline: 2px dashed red;
+    margin: 18px 0;
   }
   @media @desktop-widths {
     width: 25%;
@@ -21,14 +17,13 @@
 
   display: block;
 
-  width: 40px;
-  height: 39px;
+  width: 56px;
+  height: 56px;
   margin-right: 22px;
-
   cursor: pointer;
   background-color: #f2f2f2;
-  border-radius: 20%;
-  -webkit-flex-shrink: 0;
+  border-radius: 10%;
+  // -webkit-flex-shrink: 0;
 
   @media @tablet-widths {
     // width: 54px;
@@ -43,9 +38,7 @@
 
 .checkbox__label {
   display: block;
-
   padding: 11px 0;
-
   cursor: pointer;
 
   .font-bold-notrans(18px, 26px);
@@ -58,13 +51,13 @@
 .checkbox__input:checked ~ .checkbox__icon {
   &::after {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 16px;
+    left: 16px;
 
     display: block;
 
-    width: 14px;
-    height: 8px;
+    width: 18px;
+    height: 10px;
 
     content: '';
     -webkit-transform: rotate(136deg);

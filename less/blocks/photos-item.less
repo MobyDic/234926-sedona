@@ -25,7 +25,7 @@
   }
   .photos-item {
     position: relative;
-    width: 324px;
+    width: auto;
     min-height: 350px;
     border: none;
     padding: 0;
@@ -39,6 +39,26 @@
   .photos-item__author {
     padding-left: 20px;
     padding-bottom: 17px;
+  }
+
+}
+@media @desktop-widths {
+  .photos-item:first-child {
+    width: 100%;
+    min-height: auto;
+  }
+  .photos-item {
+    min-height: auto;
+  }
+  .photos-item__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    color: @color-white;
+  }
+  .photos-item__author {
+    color: @color-white;
   }
 
 }
