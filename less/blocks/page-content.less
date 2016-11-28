@@ -6,6 +6,7 @@
   position: relative;
   height: 390px;
   background: @color-blue url("../img/bg-back-mobile%401x.jpg") -224px 0px no-repeat;
+  z-index: -1;
   .page-content__img {
     position: relative;
     width: 280px;
@@ -16,6 +17,7 @@
     &--litle {
       width: 228px;
       top: -36px;
+      z-index: -1;
     }
   }
 
@@ -72,7 +74,7 @@
 
 .page-content__title {
 	.font-bold (18px, 26px);
-  padding: 10px;
+  padding: 10px ;
 }
 
 .page-content__slogan {
@@ -105,11 +107,12 @@
     .font-bold (21px, 26px);
     &--litle {
       .font-bold (30px, 26px);
-      padding: 45px 80px 10px ;
+      padding: 45px 80px 0;
     }
   }
   .page-content__slogan--litle{
     width: 440px;
+    padding: 5px;
     margin: 0 auto;
   }
   .page-content__intro {
@@ -133,13 +136,20 @@
       height: 300px;
     }
   }
+  .page-content__intro {
+    padding-bottom: 5px;
+    &--litle {
+      margin-bottom: 50px;
+    }
+  }
   .page-content__title {
     padding: 20px 300px 0;
     &--litle {
       padding-top: 82px;
-      padding-bottom: 10px;
+      // padding-bottom: 10px; ???посмотреть по др.формам
     }
   }
+
   .page-content__slogan--litle {
     padding-bottom: 5px;
   }
