@@ -1,7 +1,7 @@
 .radio {
   cursor: pointer;
   display: -webkit-flex;
-  // -webkit-align-items: center;
+  -webkit-align-items: center;
   width: 100%;
   margin-bottom: 15px;
   &:last-child {
@@ -58,7 +58,8 @@
 }
 
 .radio__label {
-  display: block;
+  display: -webkit-flex;
+  -webkit-align-items: center;
   cursor: pointer;
 
   .font-bold-notrans(18px, 26px);
@@ -83,4 +84,5 @@
   &::after {
     background-color: #a4a4a4;
   }
+
 }

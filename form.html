@@ -123,10 +123,10 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button type="button" class="main-nav__hamburger"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">ГЛАВНАЯ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">ФОТО И ВИДЕО</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">ФОРМА ОТЗЫВА</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="page-header__logo">
@@ -158,10 +158,8 @@
 
         <form class="form" action="" method="post">
           <fieldset class="form__fieldset form__fieldset--user-name">
-            <legend class="form__legend form__legend--big">Представьтесь, пожалуйста:</legend>
-            <legend class="form__legend form__legend--litle">Представьтесь:</legend>
-
-            <div class="form__field">
+            <legend class="form__legend">Представьтесь<span class="form__legend--big">, пожалуйста</span>:</legend>
+            <div class="form__field field-text">
               <label class="form__label" for="first-name">Имя:</label>
               <input class="form__input" type="text" id="first-name" name="first-name" required>
             </div>
@@ -176,9 +174,10 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--user-contact">
+            <div class="form__wrap">
             <legend class="form__legend form__legend--border"><span>Контактная информация:</span></legend>
             <div class="form__field form__field--user-contact">
-              <label class="form__label form__label--user-contact" for="user-phone">Контактный телефон:</label>
+              <label class="form__label form__label--user-contact" for="user-phone"><span class="form__legend--litle">Контактный</span>телефон:</label>
               <input class="form__input form__input--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="Введите телефон">
               <svg class="icon icon--phone" height="18" width="18" xmlns="http://www.w3.org/2000/svg" >
                   <use xlink:href="#icon-phone" />
@@ -192,24 +191,31 @@
                   <use xlink:href="#icon-mail" />
               </svg>
             </div>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--reply">
             <legend class="form__legend form__legend--left">Ваше общее впечатление:</legend>
-            <div class="form__field radio">
-              <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
-              <i class="radio__icon"></i>
-              <label class="radio__label" for="user-reply1">Скорее положительное</label>
+            <div class="form__radio radio">
+              <label class="radio__label" for="user-reply1">
+                <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
+                <i class="radio__icon"></i>
+              Скорее положительное
+              </label>
             </div>
-            <div class="form__field radio">
-              <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
-              <i class="radio__icon"></i>
-              <label class="radio__label" for="user-reply2">Скорее отрицательное</label>
+            <div class="form__radio radio">
+              <label class="radio__label" for="user-reply2">
+                <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
+                <i class="radio__icon"></i>
+                Скорее отрицательное
+              </label>
             </div>
-            <div class="form__field radio">
-              <input class="radio__input" type="radio" name="user-reply" id="user-reply3"value="unsure" >
-              <i class="radio__icon"></i>
-              <label class="radio__label" for="user-reply3">Затрудняюсь ответить</label>
+            <div class="form__radio radio">
+              <label class="radio__label" for="user-reply3">
+                <input class="radio__input" type="radio" name="user-reply" id="user-reply3" value="unsure" >
+                <i class="radio__icon"></i>
+                Затрудняюсь ответить
+              </label>
             </div>
           </fieldset>
 
@@ -217,24 +223,32 @@
             <legend class="form__legend form__legend--border"><span>Посещенные достопримечательности:</span></legend>
             <div class="form__wrap">
               <div class="form__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                <i class="checkbox__icon"></i>
-                <label class="checkbox__label" for="devil-bridge">Мост Дьявола</label>
+                <label class="checkbox__label" for="devil-bridge">
+                  <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                  <i class="checkbox__icon"></i>
+                  Мост Дьявола
+                </label>
               </div>
               <div class="form__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
-                <i class="checkbox__icon"></i>
-                <label class="checkbox__label" for="park">Слайд-парк</label>
+                <label class="checkbox__label" for="park">
+                  <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                  <i class="checkbox__icon"></i>
+                  Слайд-парк
+                </label>
               </div>
               <div class="form__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
-                <i class="checkbox__icon"></i>
-                <label class="checkbox__label" for="mountain-bell">Гора-Колокол</label>
+                <label class="checkbox__label" for="mountain-bell">
+                  <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
+                  <i class="checkbox__icon"></i>
+                  Гора-Колокол
+                </label>
               </div>
               <div class="form__checkbox checkbox">
-                <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
-                 <i class="checkbox__icon"></i>
-                <label class="checkbox__label" for="red-rocks">Красные скалы</label>
+                <label class="checkbox__label" for="red-rocks">
+                  <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+                   <i class="checkbox__icon"></i>
+                  Красные скалы
+                </label>
               </div>
             </div>
           </fieldset>
