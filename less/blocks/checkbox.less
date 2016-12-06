@@ -1,15 +1,7 @@
 .checkbox {
-  font-weight: bold;
   display: -webkit-flex;
   -webkit-align-items: center;
-  margin-bottom: 22px;
-  @media @tablet-widths {
-    margin: 18px 0;
-  }
-  // @media @desktop-widths {
-  //   width: 25%;
-  //   margin-right: 2px;
-  // }
+  cursor: pointer;
 }
 
 .checkbox__icon {
@@ -27,14 +19,6 @@
 
 .checkbox__input {
   display: none;
-}
-
-.checkbox__label {
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  padding: 11px 0;
-  cursor: pointer;
-  .font-bold-notrans(18px, 26px);
 }
 
 .checkbox__input:checked ~ .checkbox__icon {

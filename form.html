@@ -159,102 +159,89 @@
         <form class="form" action="" method="post">
           <fieldset class="form__fieldset form__fieldset--user-name">
             <legend class="form__legend">Представьтесь<span class="form__legend--big">, пожалуйста</span>:</legend>
-            <div class="form__field field-text">
-              <label class="form__label" for="first-name">Имя:</label>
-              <input class="form__input" type="text" id="first-name" name="first-name" required>
+            <div class="form__field input-field">
+              <label class="input__label" for="first-name">Имя:</label>
+              <input class="input__text" type="text" id="first-name" name="first-name" required>
             </div>
-            <div class="form__field">
-              <label class="form__label" for="last-name">Фамилия:</label>
-              <input class="form__input" type="text" id="last-name" name="last-name" required>
+            <div class="form__field input-field">
+              <label class="input__label" for="last-name">Фамилия:</label>
+              <input class="input__text" type="text" id="last-name" name="last-name" required>
             </div>
-            <div class="form__field">
-              <label class="form__label" for="middle-name">Отчество:</label>
-              <input class="form__input" type="text" id="middle-name" name="middle-name" >
+            <div class="form__field input-field">
+              <label class="input__label" for="middle-name">Отчество:</label>
+              <input class="input__text" type="text" id="middle-name" name="middle-name" >
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--user-contact">
+
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Контактная информация:</span></legend>
             <div class="form__wrap">
-            <legend class="form__legend form__legend--border"><span>Контактная информация:</span></legend>
-            <div class="form__field form__field--user-contact">
-              <label class="form__label form__label--user-contact" for="user-phone"><span class="form__legend--litle">Контактный</span>телефон:</label>
-              <input class="form__input form__input--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="Введите телефон">
-              <svg class="icon icon--phone" height="18" width="18" xmlns="http://www.w3.org/2000/svg" >
-                  <use xlink:href="#icon-phone" />
-              </svg>
-              <span class="form__error">Ошибка, перепроверьте номер</span>
-            </div>
-            <div class="form__field form__field--user-contact">
-              <label class="form__label form__label--user-contact" for="user-mail">Электронная почта:</label>
-              <input class="form__input form__input--long" type="email" id="user-mail" name="user-mail" placeholder="Введите e-mail">
-              <svg class="icon icon--mail" height="16" width="16" xmlns="http://www.w3.org/2000/svg" >
-                  <use xlink:href="#icon-mail" />
-              </svg>
-            </div>
+              <div class="form__field form__field--user-contact input-field">
+                <label class="input__label form__label--user-contact" for="user-phone"><span class="form__legend--litle">Контактный </span>телефон:</label>
+                <input class="input__text input__text--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="Введите телефон">
+                <svg class="icon icon--phone" height="18" width="18" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-phone" />
+                </svg>
+                <span class="input__error">Ошибка, перепроверьте номер</span>
+              </div>
+              <div class="form__field form__field--user-contact input-field">
+                <label class="input__label form__label--user-contact" for="user-mail">Электронная почта:</label>
+                <input class="input__text input__text--long" type="email" id="user-mail" name="user-mail" placeholder="Введите e-mail">
+                <svg class="icon icon--mail" height="16" width="16" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-mail" />
+                </svg>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--reply">
             <legend class="form__legend form__legend--left">Ваше общее впечатление:</legend>
-            <div class="form__radio radio">
-              <label class="radio__label" for="user-reply1">
-                <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
-                <i class="radio__icon"></i>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
+              <i class="radio__icon"></i>
               Скорее положительное
-              </label>
-            </div>
-            <div class="form__radio radio">
-              <label class="radio__label" for="user-reply2">
-                <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
-                <i class="radio__icon"></i>
-                Скорее отрицательное
-              </label>
-            </div>
-            <div class="form__radio radio">
-              <label class="radio__label" for="user-reply3">
-                <input class="radio__input" type="radio" name="user-reply" id="user-reply3" value="unsure" >
-                <i class="radio__icon"></i>
-                Затрудняюсь ответить
-              </label>
-            </div>
+            </label>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
+              <i class="radio__icon"></i>
+              Скорее отрицательное
+            </label>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply3" value="unsure" >
+              <i class="radio__icon"></i>
+              Затрудняюсь ответить
+            </label>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--visit-places">
-            <legend class="form__legend form__legend--border"><span>Посещенные достопримечательности:</span></legend>
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Посещенные достопримечательности:</span></legend>
             <div class="form__wrap">
-              <div class="form__checkbox checkbox">
-                <label class="checkbox__label" for="devil-bridge">
-                  <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                  <i class="checkbox__icon"></i>
-                  Мост Дьявола
-                </label>
-              </div>
-              <div class="form__checkbox checkbox">
-                <label class="checkbox__label" for="park">
-                  <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
-                  <i class="checkbox__icon"></i>
-                  Слайд-парк
-                </label>
-              </div>
-              <div class="form__checkbox checkbox">
-                <label class="checkbox__label" for="mountain-bell">
-                  <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
-                  <i class="checkbox__icon"></i>
-                  Гора-Колокол
-                </label>
-              </div>
-              <div class="form__checkbox checkbox">
-                <label class="checkbox__label" for="red-rocks">
-                  <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
-                   <i class="checkbox__icon"></i>
-                  Красные скалы
-                </label>
-              </div>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <i class="checkbox__icon"></i>
+                Мост Дьявола
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                <i class="checkbox__icon"></i>
+                Слайд-парк
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+                <i class="checkbox__icon"></i>
+                Гора-Колокол
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks">
+                 <i class="checkbox__icon"></i>
+                Красные скалы
+              </label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--emotion">
-            <legend class="form__legend form__legend--border"><span>Опишите свои эмоции:</span></legend>
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Опишите свои эмоции:</span></legend>
             <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
