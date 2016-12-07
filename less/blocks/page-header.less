@@ -6,7 +6,7 @@
 
 .page-header__logo {
   position: relative;
-  min-height: 57px;
+  min-height: 56px;
 
   img {
     position: absolute;
@@ -33,6 +33,14 @@
     min-height: 0;
     transform: translateX(-50%);
     // -webkit-transform: translateX(-50%);
-   }
 
+   }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    img {
+      width: 188px;
+    }
+  }
 }

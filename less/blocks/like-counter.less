@@ -1,3 +1,26 @@
+.like-counter {
+  margin-top: 10px;
+}
+.like-counter__hand {
+  position: relative;
+  margin-right: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  // outline: 2px solid grey;
+  &:active .icon--like{
+    fill: @color-grey;
+  }
+}
+
 .like-counter__number {
-	.font-regular (14px, 24px);
+	.font-bold (14px, 20px);
+    padding-top: 3px
+}
+
+@media @tablet-widths {
+  .like-counter {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
 }
