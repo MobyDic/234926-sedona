@@ -17,15 +17,25 @@
     fill: #b2b2b2;
     bottom: 0;
     left: 0;
+    cursor: pointer;
+    &:hover {
+      fill: @color-grey;
+    }
+    &:active {
+      fill: @color-lightgrey;
+    }
   }
-  &--video-replay {
-    fill: #454545;
-  }
-  &--subtitles {
-    fill: #454545;
-  }
+  &--video-replay,
+  &--subtitles,
   &--fullscreen {
     fill: #454545;
+    cursor: pointer;
+    &:hover {
+      fill: @color-grey;
+    }
+    &:active {
+      fill: @color-lightgrey;
+    }
   }
   &--phone {
     position: absolute;

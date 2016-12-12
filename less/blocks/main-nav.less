@@ -104,15 +104,25 @@
     border: none;
 
     .main-nav__link {
-        color: @color-black;
+      color: @color-black;
 
-        &:hover {
-          background-color: @color-white;
-          color: @color-blue;
-        }
-        &:active {
-          color: rgba(0,0,0s, 0.3);
-        }
+      &:hover {
+        background-color: @color-white;
+        color: @color-blue;
+      }
+      &:active {
+        color: rgba(0,0,0s, 0.3);
+      }
+
+      &--active,
+      &--active:hover {
+        color: #a4a4a4;
+        cursor: pointer;
+      }
+      &--active:active {
+        color: rgba(0,0,0s, 0.1);
+      }
+
     }
   }
 
