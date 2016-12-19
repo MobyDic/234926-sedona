@@ -1,20 +1,32 @@
 .page-footer {
-	// outline: 2px solid grey;
   margin-top: 37px;
 }
 
 .page-footer__content {
-  // outline: 2px dashed green;
   padding-top: 40px;
   padding-bottom: 24px;
 }
 
 .page-footer__copyright {
   .font-regular (14px, 26px);
-  // outline: 2px dashed green;
   display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
+}
+
+.page-footer__copyright-link {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  svg {
+    width: 25px;
+    height: 35px;
+  }
+  &:hover {
+      svg {fill: #669ec0;}
+    }
+    &:active {
+      svg {fill: @color-lightgrey;}
+    }
 }
 
 .page-footer__design-by {

@@ -1,7 +1,7 @@
 .input-field {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: relative;
 }
 
@@ -44,7 +44,7 @@
   position: absolute;
   color: red;
   .font-regular-notrans (14px, 18px);
-
+  z-index: -1;
   @media @tablet-widths {
     top: 5px;
     right: 0;
