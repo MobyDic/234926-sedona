@@ -1,8 +1,16 @@
 .photos-item {
-  // outline: 2px solid grey;
   padding: 20px;
-  //margin-bottom: 20px;
   border-bottom: 1px solid @color-lightgrey;
+}
+
+.photos-item__info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.photos-item__info-like {
+  margin-top: 8px;
 }
 
 .photos-item__title {
@@ -32,6 +40,11 @@
     background-color: @color-lightgrey;
   }
 
+  .photos-item__info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   .photos-item__title {
     padding-left: 20px;
   }
@@ -39,6 +52,9 @@
   .photos-item__author {
     padding-left: 20px;
     padding-bottom: 17px;
+  }
+  .photos-item__info-like {
+    margin: 0;
   }
 
 }

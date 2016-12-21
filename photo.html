@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона фото</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </head>
@@ -27,7 +29,7 @@
             <picture class="page-header__img">
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона лого">
             </picture>
           </a>
         </div>
@@ -38,11 +40,11 @@
 
         <div class="page-content__header page-content__header--border">
           <div class="page-content__background page-content__background--litle">
-            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg">
+            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg" alt="Седона текст">
             <picture class="page-content__picture">
               <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <img src="img/bg-intro-triangle-mobile.svg">
+              <img src="img/bg-intro-triangle-mobile.svg" alt="Седона декор">
             </picture>
           </div>
           <div class="page-content__intro">
@@ -64,9 +66,11 @@
               </a>
             </div>
             <div class="photos-item__info">
-              <h2 class="photos-item__title">Неродные просторы</h2>
-              <p class="photos-item__author">Автор фото: Борис</p>
-              <div class="like-counter">
+              <div class="photos-item__info-text">
+                <h2 class="photos-item__title">Неродные просторы</h2>
+                <p class="photos-item__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos-item__info-like like-counter">
                 <a class="like-counter__hand">
                   <svg class="icon icon--like" height="22" width="22" xmlns="http://www.w3.org/2000/svg" >
                     <use xlink:href="img/symbols.svg#icon-like" />
@@ -88,11 +92,13 @@
               </a>
             </div>
             <div class="photos-item__info">
-              <h2 class="photos-item__title">Местная растительность</h2>
-              <p class="photos-item__author">Автор фото: Сергей</p>
-              <div class="like-counter">
+              <div class="photos-item__info-text">
+                <h2 class="photos-item__title">Местная растительность</h2>
+                <p class="photos-item__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photos-item__info-like like-counter">
                 <a class="like-counter__hand">
-                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                  <svg class="icon icon--like" height="22" width="22" xmlns="http://www.w3.org/2000/svg" >
                     <use xlink:href="img/symbols.svg#icon-like" />
                   </svg>
                 </a>
@@ -112,11 +118,13 @@
               </a>
             </div>
             <div class="photos-item__info">
-              <h2 class="photos-item__title">Дорога на север</h2>
-              <p class="photos-item__author">Автор фото: Петр</p>
-              <div class="like-counter">
+              <div class="photos-item__info-text">
+                <h2 class="photos-item__title">Дорога на север</h2>
+                <p class="photos-item__author">Автор фото: Петр</p>
+              </div>
+              <div class="photos-item__info-like like-counter">
                 <a class="like-counter__hand">
-                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                  <svg class="icon icon--like" height="22" width="22" xmlns="http://www.w3.org/2000/svg" >
                     <use xlink:href="img/symbols.svg#icon-like" />
                   </svg>
                 </a>
@@ -136,11 +144,13 @@
               </a>
             </div>
             <div class="photos-item__info">
-              <h2 class="photos-item__title">Мост дьявола</h2>
-              <p class="photos-item__author">Автор фото: Антон</p>
-              <div class="like-counter">
+              <div class="photos-item__info-text">
+                <h2 class="photos-item__title">Мост дьявола</h2>
+                <p class="photos-item__author">Автор фото: Антон</p>
+              </div>
+              <div class="photos-item__info-like like-counter">
                 <a class="like-counter__hand">
-                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                  <svg class="icon icon--like" height="22" width="22" xmlns="http://www.w3.org/2000/svg" >
                     <use xlink:href="img/symbols.svg#icon-like" />
                   </svg>
                 </a>
@@ -215,7 +225,7 @@
           <div class="page-footer__copyright">
             <span class="page-footer__design-by">РАЗРАБОТАНО</span>
             <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
-              <svg xmlns="http://www.w3.org/2000/svg" >
+              <svg xmlns="http://www.w3.org/2000/svg" height="37" width="27" >
                   <use xlink:href="img/symbols.svg#logo-htmlacademy" />
               </svg>
             </a>
