@@ -32,7 +32,7 @@
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
-    "start": "gulp serve",
+    "start": "npm run build && gulp serve",
     "symbols": "gulp symbols",
     "clean": "gulp clean",
     "copy": "gulp copy"
